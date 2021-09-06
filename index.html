@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" href="css/main.css">
+
+<head>
+     <title></title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"> </script>
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+     <link rel="shortcut icon" type="image/x-icon" href="old_stuff/img/favicon/favicon.ico">
+     <!-- Need to update logo -->
+     <script src="js/main.js"></script>
+     <script src="js/logindata.js"></script>
+     <script> draggable(); areyoureadykids(); resize();</script>
+     </head>
+
+<body id="body">
+     <div id="desktop">
+          <div id="loadcheck"><p id="loadtext">Loading...</p></div>
+          <div id="taskbar"><img id="taskbarmenu" src="img/menubutton.png"></div>
+          <div id="login">
+               <br>
+               <img id="loginpic" src="img/cat.jpg">
+               <br>
+               <div><p class="longininfo">
+                    Username
+               </p></div>
+               <input class="logintext" type="text" name="username">
+               <div><p class="longininfo">
+                    Password
+               </p></div>
+               <input class="logintext" type="text" name="password"> 
+                    <img id="loginbutton" src="img/login.png">
+                    <script>loginbutt();</script>
+          </div>
+          <div class="iconcontainer testspawn" style="top:3vh;" >        
+               <script>testspawn();</script>  
+               <img src="img/cat.jpg" class="deskicon" >
+               <p class="icontext">Test Program</p>
+          </div>
+          
+          <div class="iconcontainer testspawn" style="top: 18vh;">  
+               <script>testspawn();</script>        
+               <img src="img/ixplorer.png" class="deskicon">
+               <p class="icontext">Internet<br>Explorer</p>
+          </div>
+
+               
+                         <!--
+                              <div class="program">
+                              <div class="titlebar">
+
+                                   <img src="img/ecks.png" class="closebut">
+                                   <img src="img/fullscreen.png" class="fullscreenbut">
+                                   <img src="img/minimize.png" class="minibut">
+                                   <script>programbuttons();</script>
+                         </div>
+                    </div>
+                         -->
+     </div>
+     
+
+     <div id="cleanme">
+          <img class="startbutton" id="starter" src="img/ecks.png">
+          <script>toDesktop();</script>
+          <div>
+               <p id="titletext">"WOW Epic Title!"</p>
+          </div>
+          <div id="second">
+               <p style="padding-left: 1vw;">Press ESC for a nice menu, <br> The Username and password are both "admin"</p><br>
+               <p style="padding-left: 1vw;">i will make it so you can log in with any name and password, and have them save<br>
+               also programs will have content soon <br><br>P.S. press the X in the top right :)</p> 
+          </div>
+          <div id="last"> wow epic
+          </div>
+          <div id="footer">
+               <p style="left: 2vw;">Wacky Sushi</p>
+          </div>
+     </div>
+     <nav class="menu">
+          <div>
+
+               <p class="navtext" id="homebutton" style="margin-top: 30vh;">Home
+                    <script> 
+                         $("#homebutton").click(function () {
+                           location.reload();
+                         })</script></p>
+               <p class="navtext" id="click" style="margin-top: 45vh;">Clicker
+               <script>
+                    $("#click").click(function(){
+                         console.log("clicked the clicker");
+                         window.location = ///C:/Users/giant/Documents/GitHub/TravlingMonk.github.io/clicker_page.html;
+                    })
+               </script></p>
+               <p class="navtext" style="margin-top: 60vh;">Contact</p>
+          </div>
+     </nav>
+     <!-- detect "esc"  for nav bar -->
+     <script> navDetect();</script>
+     <script>enterlogin();</script>
+
+
+
+</body>
+
+</html>

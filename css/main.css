@@ -1,0 +1,193 @@
+/* .class is multiple / #id is only one */
+#body{
+    overflow: hidden;
+    height: 100vw;
+    width: 100vw;
+    background-color: #74bdcb  ;
+    color: #e7f2f8;
+    font-family: 'Pangolin', cursive;
+}
+#last {
+    background-color: #efe7bc;
+    color: #e7f2f8;
+    position: absolute;
+    height: 50vh;
+    left: 0;
+    bottom: 0;
+    font-family: 'Pangolin', cursive;
+    width: 100vw;
+    overflow: hidden;
+
+}
+#second {
+    position: absolute;
+    color: #e7f2f8;
+    left: 0;
+    bottom: 0;
+    height: 90vh;
+    width: 100vw;
+    background-color: #ffa384;
+    font-family: 'Pangolin', cursive;
+    overflow: hidden;
+
+}
+#footer {
+    background-color: #389632;
+    font-family: 'Pangolin', cursive;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    height: 5vh;
+    width: 100vw;
+    overflow: hidden;
+
+}
+.menu {
+    position: absolute; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    display: none;
+    font-size: 10vw;
+    overflow: hidden;
+}
+.navtext {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    padding-left:25vw;
+}
+.startbutton{
+    max-width: 18px;
+    margin-top: -1vw;
+    margin-right: 1vw;
+    float: right;
+}
+.draggable {
+    padding: 0.5em;
+}
+#desktop{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background-color: black;
+}
+.program{
+    position: absolute;
+    background-color: azure;
+    width: 550px;
+    height: 450px;
+}
+.closebut{
+    padding-top: 1vh;
+    max-width: 2vw;
+    max-height: 2vh;
+    float: right;
+}
+.minibut{
+    max-width: 2vw;
+    max-height: 2vh;
+    padding-top: 1vh;
+    margin-right: 1vw;
+    float: right;
+}
+.fullscreenbut{
+    max-width: 2vw;
+    max-height: 2vh;
+    padding-top: 1vh;
+    margin-right: 1vw;
+    float: right;
+}
+.titlebar{
+    position: relative;
+    height: 4vh;
+    width: 100%;
+    background-color: goldenrod;
+}
+.iconcontainer{
+    position: absolute;
+    max-width: 20vw;
+    max-height: 30vh;
+}
+.icontext{
+    position: relative;
+    margin-top: -1vh;
+}
+.deskicon{
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    padding-bottom: 1.5vh;
+}
+#login{
+    background-color: honeydew;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+    width: 300px;
+}
+#loginpic{
+    display: block;
+    max-height: 130px;
+    max-width: 130px;
+    padding-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logintext{
+    z-index: 2;
+    display: block;
+    margin-top: -2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.longininfo{
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+#loginbutton{
+    float: right;
+    margin-top: -3.5vh;
+    margin-right: 2vw;
+}
+#taskbar{
+    background-color: #4043ff;
+    font-family: 'Pangolin', cursive;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    height: 5%;
+    width: 100vw;
+    overflow: hidden;
+}
+#taskbarmenu{
+    height: 30px;
+    width: 30px;
+    padding-left: 0.5vw;
+    padding-top: 0.5vh;
+}
+#loadcheck{
+    z-index: 100; 
+    background-color: black; 
+    position: absolute; 
+    width: 100%; 
+    height: 100%;
+    text-align: center;
+}
+#loadtext{
+    
+    font-weight: bold;
+    font-size: 18vh;
+}
