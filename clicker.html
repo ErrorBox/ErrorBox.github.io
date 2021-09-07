@@ -11,12 +11,32 @@
      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
      <link rel="shortcut icon" type="image/x-icon" href="old_stuff/img/favicon/favicon.ico">
      <!-- Need to update logo -->
+     <script src="js/clicker.js"></script>
+     <script>resdetect();</script>
      </head>
 
-     <body>
+     <body id="body">
+          <script>
+               /* read localStorage check if data is there, if not create data */
+               $(document).ready(function(){
+                    firsttime();
+                    textupdate();
+                    autocook();
+               })
+          </script>
+          <div id="head">
+                    <p id="cookietext">1000</p>
+          </div>
+            <img id="bigbut" src="img/cat.jpg"><script>
+                 clickcook();
+            </script>
 
-            <div><img src="img/cat.jpg"></div>
-
+            <div id="foot">  
+                 <div class="menubut">
+                      <p class="menutext">buildings</p>
+                    </div>           
+               <p id="resolution">---</p> <!-- need to spawn in debug script -->
+            </div>
      </body>
 
 
