@@ -6,7 +6,7 @@ function autocook(){
 }
 function textupdate(){
     var intervalId = window.setInterval(function(){
-        $("#cookietext").text("cookies: " + localStorage.getItem("cookie"))
+        $("#cookietext").text("Errors: " + localStorage.getItem("cookie"))
     },10)
 }
 function firsttime(){
@@ -39,7 +39,24 @@ function resdetect() {
         $("#cookietext").css( { "margin-left" : -textwidth })
    },10)
 }
-function cheat(){
-    /* might be able to have multiple cheats
-     in one func otherwise make a cheat.js */
+function openstore(){
+    $("#buildings").click(function(){
+        $("#buildingshop").toggle();
+    })
+}
+function openupgrade(){
+    $("#upgrades").click(function(){
+        $("#upgradeshop").toggle()
+    })
+}
+
+function cheat(code,value){
+     if(code == "adderror") {
+        var internal = localStorage.getItem("cookie")
+        internal += value;
+        localStorage.setItem("cookie",internal)
+     }
+     if(code == "seterror"){
+         localStorage.setItem("cookie",value)
+     }
 }

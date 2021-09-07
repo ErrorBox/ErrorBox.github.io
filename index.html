@@ -25,6 +25,15 @@
      </head>
 
 <body id="body">
+
+     <script>
+          $(document).ready(function(){
+               $.getJSON('http://errorbox.github.io/storage.json',function(data){
+                    console.log(data.password)
+               })
+          })
+     </script>
+
      <div id="desktop">
           <div id="loadcheck"><p id="loadtext">Loading...</p></div>
           <div id="taskbar"><img id="taskbarmenu" src="img/menubutton.png"></div>
@@ -81,7 +90,7 @@
                <p style="padding-left: 1vw;">i will make it so you can log in with any name and password, and have them save<br>
                also programs will have content soon <br><br>P.S. press the X in the top right :)</p> 
           </div>
-          <div id="last"> Click this box for a clicker game
+          <div id="last"> <p style="padding-top: 5vh;">Click this box for a clicker game</p>
                <script>
                     $("#last").click(function(){
                          document.location = "clicker.html"
@@ -89,7 +98,7 @@
                </script>
           </div>
           <div id="footer">
-               <p style="left: 2vw;">Wacky Sushi</p>
+               <p id="footertext">ErrorBox</p>
           </div>
      </div>
      <nav class="menu">
@@ -103,9 +112,9 @@
                <p class="navtext" id="click" style="margin-top: 45vh;">Clicker
                <script>
                     $("#click").click(function(){
-                         console.log("clicked the clicker");
-                         window.location = "ErrorBox.github.io/clicker.html";
+                         document.location = "clicker.html"
                     })
+                    
                </script></p>
                <p class="navtext" style="margin-top: 60vh;">Contact</p>
           </div>
