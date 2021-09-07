@@ -9,17 +9,16 @@
 }
 #last {
     background-color: #efe7bc;
-    color: black;
     position: absolute;
     height: 50vh;
     left: 0;
     bottom: 0;
-    text-align: center;
     font-size: xx-large;
     font-family: 'Pangolin', cursive;
     width: 100vw;
     overflow: hidden;
-
+    text-align: center;
+    color: black;
 }
 #second {
     position: absolute;
