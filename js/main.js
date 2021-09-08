@@ -65,3 +65,11 @@ function areyoureadykids() {
         $("#loadcheck").hide();
     }
   }
+function contact(){
+    $("#contactbut").click(function(){
+        $("#contactinfo").fadeToggle(1000)
+        setTimeout(() => {
+             $("#contactinfo").fadeToggle(1000)
+        }, 7000);
+   })
+}

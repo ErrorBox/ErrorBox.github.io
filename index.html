@@ -97,20 +97,20 @@
      </div>
      <nav class="menu">
           <div>
+               <div id="contactinfo">
+                    <div id="infobox"><p id="infotext">zachschefske@gmail.com</p></div>
+               </div>
 
-               <p class="navtext" id="homebutton" style="margin-top: 30vh;">Home
+               <p class="navtext" id="homebutton" style="margin-top: 30vh;">Reset
                     <script> 
                          $("#homebutton").click(function () {
                            location.reload();
                          })</script></p>
-               <p class="navtext" id="click" style="margin-top: 45vh;">Clicker
-               <script>
-                    $("#click").click(function(){
-                         document.location = "clicker.html"
-                    })
-                    
-               </script></p>
-               <p class="navtext" style="margin-top: 60vh;">Contact</p>
+               <p class="navtext" id="click" style="margin-top: 45vh;">magic</p>
+               <p class="navtext" style="margin-top: 60vh;" id="contactbut">Contact<script>
+                    contact();
+               </script>
+               </p>
           </div>
      </nav>
      <!-- detect "esc"  for nav bar -->

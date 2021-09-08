@@ -49,6 +49,23 @@ function openupgrade(){
         $("#upgradeshop").toggle()
     })
 }
+function hovercolor(){
+    $('.shopbut').hover(function(){
+        $(this).animate({backgroundColor:"#E54861"},250)
+        $(this).children().animate({color:"#26252c"},250)
+
+   },function(){
+    $(this).animate({backgroundColor:"#26252c"},250)
+    $(this).children().animate({color:"#E54861"},250)
+})
+   $('.menubut').hover(function(){
+    $(this).animate({backgroundColor:"#26252c"},250)
+    $(this).children().animate({color:"#e54861"},250)
+},function(){
+    $(this).animate({backgroundColor:"#e54861"},250)
+    $(this).children().animate({color:"#26252c"},250)
+})
+}
 
 function cheat(code,value){
      if(code == "adderror") {

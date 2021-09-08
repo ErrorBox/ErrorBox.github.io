@@ -53,7 +53,7 @@
 }
 .menutext{
     margin-top:2.5vh;
-    color: black;
+    color: #26252c;
     font-size: 3vh;
     font-weight: 800;
 }
@@ -90,4 +90,29 @@
     height: 100%;
     width: 39%;
     left: 0;
+}
+.shopbut{
+    background-color: #26252c;
+    height: 20vh;
+}
+.shoppic{
+    margin-top: 2.5vh;
+    max-width: 15vw;
+    max-height: 15vh;
+}
+.buildingid{
+    position: fixed;
+    color: #E54861;
+    margin-top: -11vh;
+    font-size: 5vh;
+    font-weight: bolder;
+    margin-left: 17vw;
+}
+.buildingowned{
+    position: fixed;
+    color: #E54861;
+    margin-top: -12vh;
+    margin-left: 49vw;
+    font-size: 7vh;
+    font-weight: bolder;
 }

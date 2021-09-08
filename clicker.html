@@ -16,7 +16,6 @@
      <meta name="theme-color" content="#ffffff">  
      
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
      <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"> </script>
      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
      <script src="js/clicker.js"></script>
@@ -31,6 +30,7 @@
                     firsttime();
                     textupdate();
                     autocook();
+                    hovercolor();
                })
           </script>
           <div id="head">
@@ -39,7 +39,6 @@
             <img id="bigbut" src="img/cat.jpg"><script>
                  clickcook();
             </script>
-
             <div id="foot">  
                <div class="menubut" id="buildings">
                     <p class="menutext">buildings
@@ -54,15 +53,33 @@
       
                <p id="resolution">---</p> <!-- need to spawn in debug script -->
             </div>
+
+
             <nav id="buildingshop">
                  <div id="head"></div>
                  <div id="shopright">
-                    :)
-                 </div>
+                    <div class="shopbut" style="padding-top: 5vh;">
+                         <img class="shoppic" src="img/cat.jpg">
+                         <p class="buildingid">Spagetti Code</p>
+                         <p class="buildingowned">100</p>
+                    </div>
+                    <div class="shopbut">
+                         <img class="shoppic" src="img/cat.jpg">
+                         <p class="buildingid">Virus</p>
+                         <p class="buildingowned">100</p>
+                    </div>
+                    <div class="shopbut">
+                         <img class="shoppic" src="img/cat.jpg">
+                         <p class="buildingid">Malware</p>
+                         <p class="buildingowned">100</p>
+                    </div>
+                                    
+               </div>
                  <div id="shopleft">
                       :)
                  </div>
             </nav>
+
             <nav id="upgradeshop">
                <div id="head"></div>
                <div id="shopright">

@@ -1,4 +1,11 @@
 {
+
+
     "username" : ["admin","lost"],
-    "password" : ["admin","4815162342"]
-}
+    "password" : ["admin","4815162342"],
+    
+    "red" : "#e54861",
+    "black" : "#26252c",
+    "tan" : "#f2a379",
+    "cream" : "#efd5b7"
+} 
