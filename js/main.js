@@ -51,21 +51,17 @@ function programbuttons() {
         })
     }
 function areyoureadykids() {
+    var intervalId = window.setInterval(function(){
+        if(window.innerWidth < 1000){
+            $("#loadcheck").show()
+        }
+        if(window.innerWidth > 1000) {
+            $("#loadcheck").hide()
+        }
+   },100)
     window.onload = function(){
         $("#desktop").children().hide();
         $("#loadtext").text("Get a bigger Screen!");
-        $("#loadcheck").show();
+        $("#loadcheck").hide();
     }
-    $(window).resize(function () {
-        if($(document).width()>1300){
-            $("#loadcheck").hide()
-        }
-        else{
-            $("#loadtext").text("Get a bigger Screen!");
-            $("#loadcheck").show();
-        }
-        if($(document).width() < 800) {
-            $("#loadtext").text("Get on your computer, there are cool things waiting");
-        }
-      })
   }
