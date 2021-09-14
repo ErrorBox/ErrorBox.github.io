@@ -1,4 +1,15 @@
 /* .class is multiple / #id is only one */
+
+@media screen and (max-width:1023) and (min-height:767) { /* mobile design*/
+    
+}
+
+@media screen and (min-width:1024) and (min-height:768) {/* desktop design */
+    
+}
+
+
+
 *{
     font-family: 'Roboto Mono', monospace !important
 }
@@ -11,30 +22,59 @@
     font-family: 'Pangolin', cursive;
     color: #26252C;
 }
-#last {
+.blob {
     background-color: #EFD5B7;
     position: absolute;
-    height: 30vh;
-    left: 0;
-    bottom: 0;
-    font-size: xx-large;
-    font-family: 'Pangolin', cursive;
-    width: 100vw;
     overflow: hidden;
-    text-align: center;
     color: #26252C;
+    border-radius: 18px;
+}
+#clickergame{
+    height: 50vh;
+    left: 78vw;
+    width: 12vw;
+    font-size: 101%;
+    text-align: center;
+    margin-top: -3vh;
+}
+
+#greatings{
+    margin-top: -3vh;
+    margin-left: 10.5vw;
+    height: 85vh;
+    width: 65vw;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+#greatings::-webkit-scrollbar {
+    display: none;
+  }
+.updateText{
+    padding-left: 1vw;
+    padding-top: 1vh;
+}
+.updatetitle{
+    font-size: 10vh;
+    padding-left: 1vw;
 }
 #second {
     position: absolute;
     color: #26252C;
-    left: 0;
+    left: 5vw;
     bottom: 0;
-    height: 90vh;
-    width: 100vw;
+    height: 93vh;
+    width: 90vw;
     background-color: #F2A379;
     font-family: 'Pangolin', cursive;
     overflow: hidden;
-
+    border-radius: 15px;
+}
+#titletext{
+    margin-top: -1vh;
+    font-weight: bolder;
+    margin-left: 4vw;
+    font-size: 6vh;
 }
 #footer {
     background-color: #26252C;
@@ -42,16 +82,20 @@
     position:absolute;
     bottom: 0;
     left: 0;
-    height: 5vh;
+    height: 3vh;
     width: 100vw;
     overflow: hidden;
 
 }
-#footertext{
+.footertext{
     position: fixed;
-    margin-top: 1vh;
+    margin-top: -.5vh;
+    left: 88vw;
+    font-size: 3.5vh;
+    font-weight: bolder;
+}
+#contact{
     left: 1vw;
-    font-size: 3vh;
 }
 .menu {
     position: absolute; 
@@ -89,10 +133,11 @@
 }
 #infotext{
     padding-top: 20vh;
+    font-size: 5vw;
 }
 .startbutton{
     max-width: 18px;
-    margin-top: -1vw;
+    margin-top: .5vh;
     margin-right: 1vw;
     float: right;
 }

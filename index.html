@@ -21,11 +21,10 @@
      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
      <script src="js/main.js"></script>
      <script src="js/logindata.js"></script>
-     <script> draggable(); areyoureadykids(); resize();</script>
+     <script> draggable(); resize();</script>
      </head>
 
 <body id="body">
-
      
 
      <div id="desktop">
@@ -77,48 +76,56 @@
           <img class="startbutton" id="starter" src="img/ecks.png">
           <script>toDesktop();</script>
           <div>
-               <p id="titletext">"WOW Epic Title!"</p>
+               <p id="titletext">ErrorBox</p>
           </div>
           <div id="second">
-               <p style="padding-left: 1vw;">Press ESC for a nice menu, <br> The Username and password are both "admin"</p><br>
-               <p style="padding-left: 1vw;">i will make it so you can log in with any name and password, and have them save<br>
-               also programs will have content soon <br><br>P.S. press the X in the top right :)</p> 
+               
           </div>
-          <div id="last"> <p style="padding-top: 5vh;">Click this box for a clicker game</p>
+          <div class="blob" id="clickergame"> <p style="padding-top: 65%;">Click this box for a clicker game</p>
                <script>
-                    $("#last").click(function(){
+                    $(".blob").click(function(){
                          document.location = "clicker.html"
                     })
                </script>
           </div>
-          <div id="footer">
-               <p id="footertext">ErrorBox</p>
-          </div>
-     </div>
-     <nav class="menu">
-          <div>
-               <div id="contactinfo">
-                    <div id="infobox"><p id="infotext">zachschefske@gmail.com</p></div>
+          <div class="blob updates" id="greatings"> 
+               <div class="updatetitle">Welcome to ErrorBox</div>
+               <div class="updateText"> 
+                    ErrorBox is a experiment. Anyone who dares to partake in said experiment is doing so at their free will. ErrorBox takes no responsability for the aftereffects the experiment may cause. 
+                    The science team the developed ErrorBox, and their patients have show the following effects: 
                </div>
+               <div class="updatetitle">Welcome to ErrorBox</div>
+               <div class="updateText"> <p>!Error! !Error! !Error! !Error! !Error! !Error! </p> </div>
 
-               <p class="navtext" id="homebutton" style="margin-top: 30vh;">Reset
-                    <script> 
-                         $("#homebutton").click(function () {
-                           location.reload();
-                         })</script></p>
-               <p class="navtext" id="click" style="margin-top: 45vh;">magic</p>
-               <p class="navtext" style="margin-top: 60vh;" id="contactbut">Contact<script>
-                    contact();
-               </script>
+               <div class="updatetitle">Welcome to ErrorBox</div>
+               <div class="updateText"> <p>Error Error Error Error Error Error </p> </div>
+
+               <div class="updatetitle">Welcome to ErrorBox</div>
+               <div class="updateText"> <p>Error Error Error Error Error Error </p> </div>
+
+               <div class="updatetitle">Welcome to ErrorBox</div>
+               <div class="updateText"> <p>Error Error Error Error Error Error </p> </div>
+
+
+          </div>
+
+          
+          <div id="footer">
+               <p class="footertext">ErrorBox</p>
+               <p class="footertext" id="contact">Contact
+                    <script>contact();</script>
                </p>
           </div>
-     </nav>
+
+     </div>
      <!-- detect "esc"  for nav bar -->
      <script> navDetect();</script>
      <script>enterlogin();</script>
 
 
-
+<div id="contactinfo">
+                    <div id="infobox"><p id="infotext">zachschefske@gmail.com</p></div>
+               </div>
 </body>
 
 </html>

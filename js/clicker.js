@@ -1,8 +1,22 @@
 function autocook(){
     var intervalId = window.setInterval(function(){
         var cook = localStorage.getItem("cookie")
-        var math = parseFloat(cook) + 1; /* add buildings and multiplyers here */
-        localStorage.setItem("cookie",math)   },1000)
+        var math = parseFloat(cook) + (Math.round(cook / 1000)+1); /* add buildings and multiplyers here */
+        localStorage.setItem("cookie",math)   },1
+        )
+}
+function testeps(){
+    var current = 0;
+    var last = sessionStorage.getItem('lasteps');
+
+        current = localStorage.getItem("cookie")
+        var math = (current - last );
+        console.log(math);
+        sessionStorage.setItem('lasteps',current)
+
+    setTimeout(() => {
+        testeps();
+    }, 1000);
 }
 function textupdate(){
     var intervalId = window.setInterval(function(){
